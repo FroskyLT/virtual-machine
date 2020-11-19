@@ -1,0 +1,10 @@
+﻿  virtualMachine.cpp
+D:\code\projects\VS projects\virtualMachine\virtualMachine\virtualMachine.cpp(45,20): warning C4018: '<': signed/unsigned mismatch
+D:\code\projects\VS projects\virtualMachine\virtualMachine\virtualMachine.cpp(18,16): warning C4101: 'regs': unreferenced local variable
+D:\code\projects\VS projects\virtualMachine\virtualMachine\virtualMachine.cpp(19,7): warning C4101: 'prog_mem': unreferenced local variable
+D:\code\projects\VS projects\virtualMachine\virtualMachine\virtualMachine.cpp(20,6): warning C4101: 'flag': unreferenced local variable
+D:\code\projects\VS projects\virtualMachine\virtualMachine\virtualMachine.cpp(67,23): warning C4244: 'initializing': conversion from 'std::streamoff' to 'unsigned int', possible loss of data
+D:\code\projects\VS projects\virtualMachine\virtualMachine\virtualMachine.cpp(76,54): warning C4244: 'argument': conversion from 'std::streamoff' to 'const unsigned int', possible loss of data
+D:\code\projects\VS projects\virtualMachine\virtualMachine\virtualMachine.cpp(78,29): warning C4244: 'argument': conversion from 'std::streamoff' to 'const unsigned int', possible loss of data
+D:\code\projects\VS projects\virtualMachine\virtualMachine\virtualMachine.cpp(85): warning C4715: 'read_bin_file': not all control paths return a value
+  virtualMachine.vcxproj -> D:\code\projects\VS projects\virtualMachine\Debug\virtualMachine.exe
