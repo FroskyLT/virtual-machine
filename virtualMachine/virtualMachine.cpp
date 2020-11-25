@@ -12,21 +12,17 @@ int main() {
 	ifstream fd;
 	ofstream fr;
 
-	//fd.open("decryptor.bin", ios::binary);
-	//fd.open("q2_encryptor.bin", ios::binary);
-	fd.open("testdecr.bin", ios::binary);
+	fd.open("q2_decryptor.bin", ios::binary);
 	fd.read(prog_mem, 256);
 	fd.close();
 
 	int length = strlen(prog_mem);
 
-	for (int i = 0; i <= length - 1; i+=2)
-		cout << i << ".  " << (int)prog_mem[i] << " " << (int)prog_mem[i + 1] << endl;
+	//for (int i = 0; i <= length - 1; i+=2)
+		//cout << i << ".  " << (int)prog_mem[i] << " " << (int)prog_mem[i + 1] << endl;
 
 
-	//fd.open("q1_encr.txt");
-	fd.open("q2_encr.txt");
-	//fd.open("example.txt");
+	fd.open("to_be_decrypted.txt");
 	fr.open("output.txt");
 
 	bool run = true; 
@@ -98,7 +94,7 @@ int main() {
 		case 16:
 			char byte;
 			if (fd.get(byte)) {
-				flag = false; /*cout << byte;*/
+				flag = false;
 				regs[Rx] = (unsigned char)byte;
 			}
 			else if (fd.eof()) flag = true;				break;
